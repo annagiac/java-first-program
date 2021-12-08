@@ -16,7 +16,7 @@ public class SavingsCalculator {
 
     private float sumOfCredits() {
         float sum = 0.0f;
-        for(int i= 0, i<credits.length, i++){
+        for(int i = 0; i < credits.length; i++){
             sum += credits[i];
         }
         return sum;
@@ -24,15 +24,15 @@ public class SavingsCalculator {
 
     private float sumOfDebits() {
         float sum = 0.0f;
-        for (int i=0, i<debits.length, i++){
+        for (int i = 0; i < debits.length; i++){
             sum += debits[i];
         }
         return sum;
     }
     private static int remainingDaysInMonth(LocalDate date){
         YearMonth yearMonth = YearMonth.of(int year, int month);
-        year = date.getYear();
-        month = date.getMonth();
+        int year = date.getYear();
+        int month = date.getMonth();
         int totalDaysInMonth = yearMonth.lengthOfMonth();
         int remainingDays= totalDaysInMonth - date.getDayOfMonth();
         return remainingDays;
