@@ -9,7 +9,7 @@ public class MortgageCalculator {
     private double monthlyPayment;
 
     // Constructor
-    private  MortgageCalculator(long loanAmount, int termInYears, float annualRate){
+    public MortgageCalculator(long loanAmount, int termInYears, float annualRate){
         this.loanAmount = loanAmount;
         this.termInYears = termInYears;
         this.annualRate = annualRate;
